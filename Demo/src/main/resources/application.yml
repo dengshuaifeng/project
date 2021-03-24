@@ -6,7 +6,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url:
-    username: root
+    username:
     password: root
   jackson:
     date-format: yyyy-MM-dd
