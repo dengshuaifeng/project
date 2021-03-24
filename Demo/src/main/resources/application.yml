@@ -1,0 +1,20 @@
+server:
+  port: 18080
+spring:
+  application:
+    name: pricesystem
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.8.137:3306/pricing_sys?useSSL=false&autoReconnect=true&useUnicode=true&characterEncoding=utf-8&useAffectedRows=true&&serverTimezone=Asia/Shanghai
+    username: root
+    password: eidy487fhr
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: cn.itcast.entity
+  global-config:
+    db-config:
+      logic-not-delete-value: 0
+      logic-delete-value: 1
